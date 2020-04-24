@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Core.Entities
 {
     public class Product : BaseEntity
@@ -12,13 +14,15 @@ namespace Core.Entities
 
         public string PictureUrl { get; set; }
 
-        public ProductType ProductType { get; set; }
+        public virtual ProductType ProductType { get; set; }
 
         public int ProductTypeId { get; set; }
 
-        public ProductBrand ProductBrand { get; set; }
+        public virtual ProductBrand ProductBrand { get; set; }
 
         public int ProductBrandId { get; set; }
+
+      
 
 
 

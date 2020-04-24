@@ -21,6 +21,7 @@ namespace Infrastructure.Data
 
         public DbSet<ProductBrand> ProductBrands { get; set; }
 
+        public DbSet<FirmProduct> FirmProducts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
